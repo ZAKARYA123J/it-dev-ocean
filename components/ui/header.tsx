@@ -22,8 +22,9 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white w-21 h-10"
             onClick={toggleMobileMenu}
+          
           >
             ☰
           </button>
