@@ -32,22 +32,22 @@ export default function Header() {
           {/* Desktop links */}
           <ul className="hidden md:flex flex-1 items-center justify-end gap-3">
             <li>
-              <Link href="/signin" className="btn-sm text-gray-300">
+              <Link href="/" className="btn-sm text-gray-300">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/signup" className="btn-sm text-white bg-indigo-500">
+              <Link href="/" className="btn-sm text-white bg-indigo-500">
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/signup" className="btn-sm text-gray-300">
+              <Link href="/" className="btn-sm text-gray-300">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link href="/signup" className="btn-sm text-gray-300">
+              <Link href="/" className="btn-sm text-gray-300">
                 About Us
               </Link>
             </li>
@@ -57,22 +57,22 @@ export default function Header() {
           {isMobileMenuOpen && (
             <ul className="absolute top-14 left-0 w-full bg-gray-900 rounded-lg shadow-md md:hidden">
               <li>
-                <Link href="/signin" className="block px-4 py-2 text-gray-300">
+                <Link href="/" className="block px-4 py-2 text-gray-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/signup" className="block px-4 py-2 text-white bg-indigo-500">
+                <Link href="/" className="block px-4 py-2 text-white bg-indigo-500">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/signup" className="block px-4 py-2 text-gray-300">
+                <Link href="/" className="block px-4 py-2 text-gray-300">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/signup" className="block px-4 py-2 text-gray-300">
+                <Link href="/" className="block px-4 py-2 text-gray-300">
                   About Us
                 </Link>
               </li>
