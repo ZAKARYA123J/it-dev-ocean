@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BlurredShapeGray from "@/public/images/blurred-shape-gray.svg";
 import BlurredShape from "@/public/images/blurred-shape.svg";
-import FeaturesImage from "@/public/images/ocean.svg";
+import FeaturesImage from "@/public/images/OCEANCONNECTING.svg";
 
 export default function Features() {
   return (
@@ -51,8 +51,8 @@ export default function Features() {
             <Image
               className="max-w-none"
               src={FeaturesImage}
-              width={104}
-              height={384}
+              width={204}
+              height={284}
               alt="Platform Features"
             />
           </div>

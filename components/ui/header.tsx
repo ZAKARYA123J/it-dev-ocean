@@ -47,8 +47,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="btn-sm text-gray-300">
-                About Us
+              <Link href="/contact" className="btn-sm text-gray-300">
+                Contact Us
               </Link>
             </li>
           </ul>
