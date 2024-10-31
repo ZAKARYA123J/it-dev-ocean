@@ -41,7 +41,7 @@ export default function Workflows() {
                 <div className="p-6">
                   <div className="mb-3">
                     <span className="btn-sm bg-gray-800/40 text-indigo-500">
-                      Custom Tools
+                    Web Solution
                     </span>
                   </div>
                   <p className="text-indigo-200/65">

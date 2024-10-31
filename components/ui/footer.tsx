@@ -59,8 +59,7 @@ export default function Footer() {
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
-                  href="#0"
-                >
+                  href="#0">
                   Our method
                 </a>
               </li>
@@ -151,7 +150,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* 4th block */}
-          <div className="space-y-2">
+          <div className="space-y-1"> {/*
             <h3 className="text-sm font-medium text-gray-200">
               Content Library
             </h3>
@@ -196,16 +195,16 @@ export default function Footer() {
                   Cookie manager
                 </a>
               </li>
-            </ul>
-          </div>
+            </ul>*/}
+          </div> 
           {/* 5th block */}
-          <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-right">
+          <div className="col-span-3 md:col-span-4 lg:col-span-1 lg:text-right ">
             <div className="mb-3">
               <Logo />
             </div>
             <div className="text-sm">
               <p className="mb-3 text-indigo-200/65">
-                © Cruip.com
+                © oceanconnecting.ma
                 <span className="text-gray-700"> · </span>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
