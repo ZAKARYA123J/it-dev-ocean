@@ -37,7 +37,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="btn-sm text-white bg-indigo-500">
+              <Link href="/" className="btn-sm text-white">
                 Services
               </Link>
             </li>
@@ -62,7 +62,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="block px-4 py-2 text-white bg-indigo-500">
+                <Link href="/" className="block px-4 py-2 text-white">
                   Services
                 </Link>
               </li>
@@ -72,7 +72,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="block px-4 py-2 text-gray-300">
+                <Link href="/contact" className="block px-4 py-2 text-gray-300">
                   Contact Us
                 </Link>
               </li>
