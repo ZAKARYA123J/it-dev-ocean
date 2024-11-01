@@ -42,8 +42,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="btn-sm text-gray-300">
-                Portfolio
+              <Link href="/team" className="btn-sm text-gray-300">
+              Team
               </Link>
             </li>
             <li>
@@ -67,13 +67,13 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="block px-4 py-2 text-gray-300">
-                  Portfolio
+                <Link href="/team" className="block px-4 py-2 text-gray-300">
+                Team
                 </Link>
               </li>
               <li>
                 <Link href="/" className="block px-4 py-2 text-gray-300">
-                  About Us
+                  Contact Us
                 </Link>
               </li>
             </ul>

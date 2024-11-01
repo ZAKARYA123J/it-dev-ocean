@@ -13,13 +13,13 @@ export const metadata = {
 
 export default function Team() {
   const teamMembers = [
-    { name: "Kamal", role: "Senior Developer", description: "Specializes in creating beautiful and responsive interfaces.", imgSrc: kaml },
-    { name: "Zakaria baouali", role: "Full stack Developer", description: "Focuses on building robust and scalable APIs.", imgSrc: zakaria },
+    { name: "KAMAL", role: "Senior Developer", description: "Specializes in creating beautiful and responsive interfaces.", imgSrc: kaml },
+    { name: "ZAKARIA BAOUALI", role: "Full stack Developer", description: "Focuses on building robust and scalable APIs.", imgSrc: zakaria },
     { name: "ENNACHOUM ZAKARIA", role: "Full stack Developer", description: "Designs intuitive and engaging user experiences.", imgSrc: zakaria2 },
-    { name: "Tom Brown", role: "Full stack Developerr", description: "Ensures projects are on track and meet deadlines.", imgSrc: mostafa },
-    { name: "Tom Brown", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: annas },
+    { name: "MOSTAFA AKAJDID", role: "Full stack Developerr", description: "Ensures projects are on track and meet deadlines.", imgSrc: mostafa },
+    { name: "ANASS ZARIOH", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: annas },
     { name: "AYOUB BOUNAGA", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: ayoub },
-    { name: "Omar Elkaddouri", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: omar },
+    { name: "Omar ELKADDOURI", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: omar },
   ];
 
   return (
