@@ -45,7 +45,7 @@ export default function ModalVideo({
       </div>
 
       {/* Video thumbnail */}
-      <button
+      {/* <button
         className="group relative flex items-center justify-center rounded-2xl focus:outline-none focus-visible:ring focus-visible:ring-indigo-200"
         onClick={() => {
           setModalOpen(true);
@@ -53,7 +53,7 @@ export default function ModalVideo({
         aria-label="Watch the video"
         data-aos="fade-up"
         data-aos-delay={200}
-      >
+      > */}
         <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-gradient-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
           <Image
             className="opacity-50 grayscale"
@@ -65,7 +65,7 @@ export default function ModalVideo({
           />
         </figure>
         {/* Play icon */}
-        <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
+        {/* <span className="pointer-events-none absolute p-2.5 before:absolute before:inset-0 before:rounded-full before:bg-gray-950 before:duration-300 group-hover:before:scale-110">
           <span className="relative flex items-center gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -99,8 +99,8 @@ export default function ModalVideo({
               3:47
             </span>
           </span>
-        </span>
-      </button>
+        </span> */}
+      {/* </button> */}
       {/* End: Video thumbnail */}
 
       <Dialog

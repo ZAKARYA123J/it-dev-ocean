@@ -15,7 +15,9 @@ export default function Home() {
     <>
       <PageIllustration />
       <Hero />
+      <section id="services">
       <Workflows />
+      </section>
       <Features />
       {/* <Testimonials /> */}
       <Cta />
