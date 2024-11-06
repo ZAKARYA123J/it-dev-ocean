@@ -52,6 +52,20 @@ export default function ContactUs() {
               <div>
                 <label
                   className="mb-1 block text-sm font-medium text-indigo-200/65"
+                  htmlFor="phone"
+                >
+                  Phone Number
+                </label>
+                <input
+                  id="phone"
+                  type="tel"
+                  className="form-input w-full"
+                  placeholder="Your phone number"
+                />
+              </div>
+              <div>
+                <label
+                  className="mb-1 block text-sm font-medium text-indigo-200/65"
                   htmlFor="message"
                 >
                   Message

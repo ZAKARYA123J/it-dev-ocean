@@ -36,8 +36,8 @@ export default function Team() {
       role: "Full stack Developer", 
       description: "Designs intuitive and engaging user experiences.", 
       imgSrc: zakaria2, 
-      github: "https://github.com/ennachoumzakaria", 
-      linkedin: "https://www.linkedin.com/in/ennachoumzakaria" 
+      github: "https://github.com/Umbrator", 
+      linkedin: "https://www.linkedin.com/in/ennachoum-zakaria-264134231/" 
     },
     { 
       name: "MOSTAFA AKAJDID", 
