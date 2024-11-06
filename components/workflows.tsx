@@ -17,10 +17,10 @@ export default function Workflows() {
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-            How can we help you?
+            Your success, our target.
             </h2>
             <p className="text-lg text-indigo-200/65">
-              Empower your team with intuitive workflows designed to integrate seamlessly with your project and scale as needed.
+            Our service portfolio covers the entire software development life cycle while meeting your business needs.
             </p>
           </div>
           {/* Spotlight items */}
@@ -66,11 +66,11 @@ export default function Workflows() {
                 <div className="p-6">
                   <div className="mb-3">
                     <span className="btn-sm bg-gray-800/40 text-indigo-500">
-                      Scalable Architecture
+                    Software Development
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                  Scalable architecture is essential for businesses and applications that anticipate growth, allowing them to adjust the necessary resources based on demand while maintaining system performance and reliability.
+                  With us, software development focuses on creating reliable and scalable solutions for any operating system, browser, and device. We combine deep industry expertise and the latest technical advancements to deliver customized solutions and products that perfectly align with the needs and behaviors of their users.
                   </p>
                 </div>
               </div>
@@ -91,11 +91,11 @@ export default function Workflows() {
                 <div className="p-6">
                   <div className="mb-3">
                     <span className="btn-sm bg-gray-800/40 text-indigo-500">
-                      Tailored Integrations
+                    Data analysis
                     </span>
                   </div>
                   <p className="text-indigo-200/65">
-                  Tailored integrations offer a specialized approach to connecting software applications within an organization, ensuring that systems work in harmony according to specific business requirements. This customization fosters greater efficiency, flexibility, and user satisfaction, positioning the organization better to adapt and grow in a changing environment.
+                  When it comes to digital business models, data is your most important resource. At MMPG Softwares, we understand this and, since our inception, have been working to deliver services to our clients and partners that will help them optimize their data efforts. Have you ever dreamed of an integrated data structure where all your sales, KPIs, and metrics are gathered on a beautiful live dashboard.
                   </p>
                 </div>
               </div>
