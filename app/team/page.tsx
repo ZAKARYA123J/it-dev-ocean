@@ -63,14 +63,14 @@ export default function Team() {
       github: "https://github.com/ayoub", 
       linkedin: "https://www.linkedin.com/in/ayoub" 
     },
-    { 
-      name: "Omar ELKADDOURI", 
-      role: "Full stack Developer", 
-      description: "Ensures projects are on track and meet deadlines.", 
-      imgSrc: omar, 
-      github: "https://github.com/omar", 
-      linkedin: "https://www.linkedin.com/in/omar" 
-    },
+    // { 
+    //   name: "Omar ELKADDOURI", 
+    //   role: "Full stack Developer", 
+    //   description: "Ensures projects are on track and meet deadlines.", 
+    //   imgSrc: omar, 
+    //   github: "https://github.com/omar", 
+    //   linkedin: "https://www.linkedin.com/in/omar" 
+    // },
   ];
 
   return (
@@ -87,7 +87,7 @@ export default function Team() {
             </p>
           </div>
           {/* Team cards */}
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {teamMembers.map((member, index) => (
               <div key={index} className="rounded-lg p-6 text-center shadow-md bg-gradient-to-b from-gray-800 to-gray-700">
                 <Image
