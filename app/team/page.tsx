@@ -1,11 +1,13 @@
 import Image from 'next/image';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import kaml from "@/public/picdev/kamal.svg";
-import zakaria from '@/public/picdev/zakaria2.svg'
-import zakaria2 from '@/public/picdev/zakaria.svg'
-import mostafa from '@/public/picdev/mostafa.svg'
-import annas from '@/public/picdev/anass.svg'
-import ayoub from '@/public/picdev/ayoub.svg'
-import omar from '@/public/picdev/omar.svg'
+import zakaria from '@/public/picdev/zakaria2.svg';
+import zakaria2 from '@/public/picdev/zakaria.svg';
+import mostafa from '@/public/picdev/mostafa.svg';
+import annas from '@/public/picdev/anass.svg';
+import ayoub from '@/public/picdev/ayoub.svg';
+import omar from '@/public/picdev/omar.svg';
+
 export const metadata = {
   title: "Our Team - Open PRO",
   description: "Meet the team behind our projects",
@@ -13,13 +15,62 @@ export const metadata = {
 
 export default function Team() {
   const teamMembers = [
-    { name: "KAMAL", role: "Senior Developer", description: "Specializes in creating beautiful and responsive interfaces.", imgSrc: kaml },
-    { name: "ZAKARIA BAOUALI", role: "Full stack Developer", description: "Focuses on building robust and scalable APIs.", imgSrc: zakaria },
-    { name: "ENNACHOUM ZAKARIA", role: "Full stack Developer", description: "Designs intuitive and engaging user experiences.", imgSrc: zakaria2 },
-    { name: "MOSTAFA AKAJDID", role: "Full stack Developerr", description: "Ensures projects are on track and meet deadlines.", imgSrc: mostafa },
-    { name: "ANASS ZARIOH", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: annas },
-    { name: "AYOUB BOUNAGA", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: ayoub },
-    { name: "Omar ELKADDOURI", role: "Full stack Developer", description: "Ensures projects are on track and meet deadlines.", imgSrc: omar },
+    { 
+      name: "KAMAL", 
+      role: "Senior Developer", 
+      description: "Specializes in creating beautiful and responsive interfaces.", 
+      imgSrc: kaml, 
+      github: "https://github.com/kamal", 
+      linkedin: "https://www.linkedin.com/in/kamal" 
+    },
+    { 
+      name: "ZAKARIA BAOUALI", 
+      role: "Full stack Developer", 
+      description: "Focuses on building robust and scalable APIs.", 
+      imgSrc: zakaria, 
+      github: "https://github.com/ZAKARYA123J", 
+      linkedin: "https://www.linkedin.com/in/zakaria-baouali-92b217333/" 
+    },
+    { 
+      name: "ENNACHOUM ZAKARIA", 
+      role: "Full stack Developer", 
+      description: "Designs intuitive and engaging user experiences.", 
+      imgSrc: zakaria2, 
+      github: "https://github.com/ennachoumzakaria", 
+      linkedin: "https://www.linkedin.com/in/ennachoumzakaria" 
+    },
+    { 
+      name: "MOSTAFA AKAJDID", 
+      role: "Full stack Developer", 
+      description: "Ensures projects are on track and meet deadlines.", 
+      imgSrc: mostafa, 
+      github: "https://github.com/mostafa", 
+      linkedin: "https://www.linkedin.com/in/mostafa" 
+    },
+    { 
+      name: "ANASS ZARIOH", 
+      role: "Full stack Developer", 
+      description: "Ensures projects are on track and meet deadlines.", 
+      imgSrc: annas, 
+      github: "https://github.com/anass", 
+      linkedin: "https://www.linkedin.com/in/anass" 
+    },
+    { 
+      name: "AYOUB BOUNAGA", 
+      role: "Full stack Developer", 
+      description: "Ensures projects are on track and meet deadlines.", 
+      imgSrc: ayoub, 
+      github: "https://github.com/ayoub", 
+      linkedin: "https://www.linkedin.com/in/ayoub" 
+    },
+    { 
+      name: "Omar ELKADDOURI", 
+      role: "Full stack Developer", 
+      description: "Ensures projects are on track and meet deadlines.", 
+      imgSrc: omar, 
+      github: "https://github.com/omar", 
+      linkedin: "https://www.linkedin.com/in/omar" 
+    },
   ];
 
   return (
@@ -49,6 +100,28 @@ export default function Team() {
                 <h3 className="text-lg font-medium text-white">{member.name}</h3>
                 <p className="text-sm text-indigo-200/65">{member.role}</p>
                 <p className="mt-2 text-sm text-gray-400">{member.description}</p>
+                <div className="mt-4 flex justify-center space-x-4">
+                  {member.github && (
+                    <a
+                      href={member.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white"
+                    >
+                      <FaGithub size={20} />
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white"
+                    >
+                      <FaLinkedin size={20} />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
