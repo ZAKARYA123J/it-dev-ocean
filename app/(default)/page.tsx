@@ -1,8 +1,4 @@
-export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
-};
-
+import React from "react";
 import PageIllustration from "@/components/page-illustration";
 import Hero from "@/components/hero-home";
 import Workflows from "@/components/workflows";
@@ -10,17 +6,28 @@ import Features from "@/components/features";
 import Testimonials from "@/components/testimonials";
 import Cta from "@/components/cta";
 
+const MemoizedPageIllustration = React.memo(PageIllustration);
+const MemoizedHero = React.memo(Hero);
+const MemoizedWorkflows = React.memo(Workflows);
+const MemoizedFeatures = React.memo(Features);
+const MemoizedCta = React.memo(Cta);
+
+export const metadata = {
+  title: "Home - ocean connecting developer",
+  description: "Page description",
+};
+
 export default function Home() {
   return (
     <>
-      <PageIllustration />
-      <Hero />
+      <MemoizedPageIllustration />
+      <MemoizedHero />
       <section id="services">
-      <Workflows />
+        <MemoizedWorkflows />
       </section>
-      <Features />
+      <MemoizedFeatures />
       {/* <Testimonials /> */}
-      <Cta />
+      <MemoizedCta />
     </>
   );
 }
