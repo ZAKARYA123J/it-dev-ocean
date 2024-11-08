@@ -12,7 +12,7 @@ export const metadata = {
   title: "Our Team - Open PRO",
   description: "Meet the team behind our projects",
 };
-
+import Footer from '@/components/ui/footer';
 export default function Team() {
   const teamMembers = [
     { 
@@ -79,26 +79,26 @@ export default function Team() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="pb-12 text-center">
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.indigo.200),theme(colors.gray.50),theme(colors.indigo.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.black),theme(colors.violet.500),theme(colors.gray.900),theme(colors.violet.600),theme(colors.black))] bg-[length:200%_auto] bg-clip-text font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Meet Our Team
             </h1>
-            <p className="text-sm text-indigo-200/65 mt-3">
+            <p className="text-sm text-violet-300 mt-3">
               Passionate developers dedicated to building top-notch solutions.
             </p>
           </div>
           {/* Team cards */}
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             {teamMembers.map((member, index) => (
-              <div key={index} className="rounded-lg p-6 text-center shadow-md bg-gradient-to-b from-gray-800 to-gray-700">
+              <div key={index} className="rounded-lg p-6 text-center shadow-md bg-gradient-to-b from-black to-violet-900">
                 <Image
                   src={member.imgSrc}
                   alt={`${member.name} profile picture`}
-                  width={116}
-                  height={106}
-                  className="mx-auto  rounded-full object-cover mb-4"
+                  width={156}
+                  height={156}
+                  className="mx-auto mb-4"
                 />
                 <h3 className="text-lg font-medium text-white">{member.name}</h3>
-                <p className="text-sm text-indigo-200/65">{member.role}</p>
+                <p className="text-sm text-violet-300">{member.role}</p>
                 <p className="mt-2 text-sm text-gray-400">{member.description}</p>
                 <div className="mt-4 flex justify-center space-x-4">
                   {member.github && (
@@ -106,7 +106,7 @@ export default function Team() {
                       href={member.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white"
+                      className="text-violet-400 hover:text-violet-600"
                     >
                       <FaGithub size={20} />
                     </a>
@@ -116,7 +116,7 @@ export default function Team() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white"
+                      className="text-violet-400 hover:text-violet-600"
                     >
                       <FaLinkedin size={20} />
                     </a>
@@ -127,6 +127,7 @@ export default function Team() {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 }

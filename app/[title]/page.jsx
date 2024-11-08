@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import Footer from "@/components/ui/footer";
 function ServicePage() {
   const { title } = useParams();
 
@@ -135,67 +135,73 @@ function ServicePage() {
   const pageTitle = `${currentService.title} | Your Company Name`;
   const pageDescription = currentService.description;
   return (
-    <div className="p-6 max-w-6xl mx-auto">
-    <Head>
-      <title>{pageTitle}</title>
-      <meta name="description" content={pageDescription} />
-      <meta property="og:title" content={pageTitle} />
-      <meta property="og:description" content={pageDescription} />
-      <meta property="og:image" content={currentService.image} />
-      <meta property="og:type" content="website" />
-    </Head>
+    <>
+    <div className="p-6 max-w-6xl mx-auto bg-black text-indigo-200">
+        <Head>
+          <title>{pageTitle}</title>
+          <meta name="description" content={pageDescription} />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={pageDescription} />
+          <meta property="og:image" content={currentService.image} />
+          <meta property="og:type" content="website" />
+        </Head>
 
-    <h1 className="text-4xl font-semibold mb-4">{currentService.title || 'Service Not Found'}</h1>
+        <h1 className="text-5xl font-bold mb-6 text-violet-500">{currentService.title || 'Service Not Found'}</h1>
 
-    <div className="lg:flex lg:space-x-8 mb-6">
-      {/* Text Section */}
-      <div className="lg:w-1/2">
-        <p className="text-lg mb-6">{currentService.description || 'The service you are looking for does not exist.'}</p>
+        <div className="lg:flex lg:space-x-8 mb-6">
+          {/* Card-style Text Section */}
+          <div className="lg:w-1/2 p-6 border border-violet-500 bg-black rounded-lg shadow-lg">
+            <p className="text-lg mb-6">{currentService.description || 'The service you are looking for does not exist.'}</p>
 
-        {/* Features Section */}
-        {currentService.features && (
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Key Features</h2>
-            <ul className="list-disc pl-5 space-y-2">
-              {currentService.features.map((feature, index) => (
-                <li key={index} className="text-indigo-200/80">{feature}</li>
-              ))}
-            </ul>
+            {/* Features Section */}
+            {currentService.features && (
+              <div className="mb-6">
+                <h2 className="text-2xl font-semibold mb-2 text-violet-500">Key Features</h2>
+                <ul className="list-disc pl-5 space-y-2">
+                  {currentService.features.map((feature, index) => (
+                    <li key={index} className="text-indigo-200/80">{feature}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Benefits Section */}
+            {currentService.benefits && (
+              <div className="mb-6">
+                <h2 className="text-2xl font-semibold mb-2 text-violet-500">Benefits</h2>
+                <ul className="list-disc pl-5 space-y-2">
+                  {currentService.benefits.map((benefit, index) => (
+                    <li key={index} className="text-indigo-200/80">{benefit}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-        )}
 
-        {/* Benefits Section */}
-        {currentService.benefits && (
-          <div className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Benefits</h2>
-            <ul className="list-disc pl-5 space-y-2">
-              {currentService.benefits.map((benefit, index) => (
-                <li key={index} className="text-indigo-200/80">{benefit}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-
-      {/* Image Section */}
-      {currentService.image && (
-        <div className="lg:w-1/2 lg:flex lg:justify-end lg:items-start">
-          <Image src={currentService.image} width={800} height={400} alt={`${currentService.title} Image`} className="rounded-lg" />
+          {/* Image Section */}
+          {currentService.image && (
+            <div className="lg:w-1/2 lg:flex lg:justify-end lg:items-start">
+              <Image src={currentService.image} width={800} height={400} alt={`${currentService.title} Image`} className="rounded-lg shadow-lg border border-violet-500" />
+            </div>
+          )}
         </div>
-      )}
-    </div>
 
     {/* Call to Action Section */}
-    {currentService.callToAction && (
-      <div className="bg-gray-900 p-6 rounded-lg text-center mt-8">
-        <h2 className="text-2xl font-semibold text-indigo-200 mb-2">Get Started</h2>
-        <p className="text-lg mb-4">{currentService.callToAction}</p>
-        <Link href={'/contact'} className="px-6 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-600">
+    <div className="p-6 rounded-lg text-center mt-8 shadow-lg">
+    <Link href={'/contact'} className="px-6 py-2  bg-black text-violet-500 rounded-md border border-violet-500 hover:bg-violet-500 hover:text-black transition">
           Contact Us
         </Link>
+        </div>
+    {/* {currentService.callToAction && (
+          <div className="p-6 bg-violet-800 rounded-lg text-center mt-8 shadow-lg">
+            <h2 className="text-2xl font-semibold text-indigo-200 mb-2">Get Started</h2>
+            <p className="text-lg mb-4 text-white">{currentService.callToAction}</p>
+         
       </div>
-    )}
+    )} */}
   </div>
+  <Footer/>
+  </>
   );
 }
 

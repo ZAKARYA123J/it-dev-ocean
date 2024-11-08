@@ -2,10 +2,11 @@ export const metadata = {
   title: "Contact Us - Open PRO",
   description: "Contact page description",
 };
-
+import Image from "next/image";
+import Footer from "@/components/ui/footer";
 import Link from "next/link";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
-
+import contact from '@/public/images/contact.jpg'
 export default function ContactUs() {
   return (
     <section>
@@ -18,72 +19,54 @@ export default function ContactUs() {
             </h1>
           </div>
 
-          {/* Contact form */}
-          <form className="mx-auto max-w-[400px]">
-            <div className="space-y-5">
-              <div>
-                <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  className="form-input w-full"
-                  placeholder="Your name"
-                />
+          {/* Flex container for form and image */}
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Contact form */}
+            <form className="mx-auto max-w-[400px] md:w-1/2">
+              <div className="space-y-5">
+                <div>
+                  <label className="mb-1 block text-sm font-medium text-indigo-200/65" htmlFor="name">
+                    Name
+                  </label>
+                  <input id="name" type="text" className="form-input w-full" placeholder="Your name" />
+                </div>
+                <div>
+                  <label className="mb-1 block text-sm font-medium text-indigo-200/65" htmlFor="email">
+                    Email
+                  </label>
+                  <input id="email" type="email" className="form-input w-full" placeholder="Your email" />
+                </div>
+                <div>
+                  <label className="mb-1 block text-sm font-medium text-indigo-200/65" htmlFor="phone">
+                    Phone Number
+                  </label>
+                  <input id="phone" type="tel" className="form-input w-full" placeholder="Your phone number" />
+                </div>
+                <div>
+                  <label className="mb-1 block text-sm font-medium text-indigo-200/65" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea id="message" className="form-input w-full" placeholder="Your message" rows={4} />
+                </div>
               </div>
-              <div>
-                <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  className="form-input w-full"
-                  placeholder="Your email"
-                />
+              <div className="mt-6">
+                <button className="btn w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]">
+                  Send Message
+                </button>
               </div>
-              <div>
-                <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
-                  htmlFor="phone"
-                >
-                  Phone Number
-                </label>
-                <input
-                  id="phone"
-                  type="tel"
-                  className="form-input w-full"
-                  placeholder="Your phone number"
-                />
-              </div>
-              <div>
-                <label
-                  className="mb-1 block text-sm font-medium text-indigo-200/65"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  className="form-input w-full"
-                  placeholder="Your message"
-                  rows={4}
-                />
-              </div>
+            </form>
+
+            {/* Image on the right */}
+            <div className="hidden md:block md:w-1/2 md:pl-10">
+            <Image
+  src={contact}
+  alt="Contact Us"
+  className="rounded-lg shadow-md w-[500px] h-[500px] object-cover"
+  priority
+/>
+
             </div>
-            <div className="mt-6">
-              <button className="btn w-full bg-gradient-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]">
-                Send Message
-              </button>
-            </div>
-          </form>
+          </div>
 
           {/* Contact options */}
           <div className="mt-8 text-center">
@@ -109,6 +92,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
