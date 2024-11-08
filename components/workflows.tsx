@@ -10,6 +10,7 @@ import Spotlight from "@/components/spotlight";
 import Hardware from '@/public/images/Hardware.jpeg'
 import it from '@/public/images/it.jpeg'
 import Security from '@/public/images/Security.jpeg'
+import Link from "next/link";
 export default function Workflows() {
   return (
     <section>
@@ -32,9 +33,9 @@ export default function Workflows() {
           {/* Spotlight items */}
           <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-2">
             {/* Card 1 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`/${'UIUX'}`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -55,11 +56,11 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             {/* Card 2 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`${'/Web_Development'}`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -81,11 +82,11 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             {/* Card 3 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`/Applications_Development`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -106,10 +107,10 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`${'/Mobile_Development'}`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -130,7 +131,7 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
            
           </Spotlight>
         </div>
@@ -151,9 +152,9 @@ export default function Workflows() {
           {/* Spotlight items */}
           <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
             {/* Card 1 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`/Hardware_Software_Sales`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -176,11 +177,11 @@ Telecommunications: PABX, Videoconferencing Telephone Switchboards, etc.
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             {/* Card 2 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`/IT_Systems_Deployment_Optimization`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -204,11 +205,11 @@ Telecommunications: VOIP, ROIP, PBX…
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             {/* Card 3 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px"
-              href="#0"
+              href={`${'/Security_Surveillance'}`}
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 <Image
@@ -230,7 +231,7 @@ Telecommunications: VOIP, ROIP, PBX…
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
          
            
           </Spotlight>

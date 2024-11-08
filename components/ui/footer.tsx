@@ -22,14 +22,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
+            <h3 className="text-sm font-medium text-gray-200">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Features
+                  UI/UX Design
                 </a>
               </li>
               <li>
@@ -37,7 +37,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Integrations
+                  Web Development
                 </a>
               </li>
               <li>
@@ -45,7 +45,7 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Pricing &amp; Plans
+                   Applications Development
                 </a>
               </li>
               <li>
@@ -53,10 +53,10 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Changelog
+                 Mobile Development
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0">
@@ -70,19 +70,19 @@ export default function Footer() {
                 >
                   User policy
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* 2nd block */}
           <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Company</h3>
+            <h3 className="text-sm font-medium text-gray-200">IT services</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  About us
+                  Hardware And Software Sales
                 </a>
               </li>
               <li>
@@ -90,10 +90,10 @@ export default function Footer() {
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
-                  Diversity &amp; Inclusion
+                  IT Systems Deployment And Optimization
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
@@ -116,7 +116,7 @@ export default function Footer() {
                 >
                   Financial statements
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* 3rd block */}
@@ -139,14 +139,14 @@ export default function Footer() {
                   Terms of service
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
                   Report a vulnerability
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           {/* 4th block */}
@@ -206,12 +206,12 @@ export default function Footer() {
               <p className="mb-3 text-indigo-200/65">
                 © oceanconnecting.ma
                 <span className="text-gray-700"> · </span>
-                <a
+                {/* <a
                   className="text-indigo-200/65 transition hover:text-indigo-500"
                   href="#0"
                 >
                   Terms
-                </a>
+                </a> */}
               </p>
               <ul className="inline-flex gap-1">
                 <li>

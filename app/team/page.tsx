@@ -93,9 +93,9 @@ export default function Team() {
                 <Image
                   src={member.imgSrc}
                   alt={`${member.name} profile picture`}
-                  width={96}
-                  height={96}
-                  className="mx-auto h-24 w-24 rounded-full object-cover mb-4"
+                  width={116}
+                  height={106}
+                  className="mx-auto  rounded-full object-cover mb-4"
                 />
                 <h3 className="text-lg font-medium text-white">{member.name}</h3>
                 <p className="text-sm text-indigo-200/65">{member.role}</p>
