@@ -65,8 +65,7 @@ export default function HeroHome() {
     layout="responsive"
     className="rounded-md"
     style={{
-      objectFit: 'cover',
-      border: '2px solid #8A2BE2',
+      objectFit: 'cover'
     }}
   />
 </div>
