@@ -136,7 +136,7 @@ function ServicePage() {
   const pageDescription = currentService.description;
   return (
     <>
-    <div className="p-6 max-w-6xl mx-auto bg-black text-indigo-200">
+    <div className="p-6 max-w-6xl mx-auto text-indigo-200">
         <Head>
           <title>{pageTitle}</title>
           <meta name="description" content={pageDescription} />
