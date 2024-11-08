@@ -150,7 +150,7 @@ function ServicePage() {
 
         <div className="lg:flex lg:space-x-8 mb-6">
           {/* Card-style Text Section */}
-          <div className="lg:w-1/2 p-6 border border-violet-500 bg-black rounded-lg shadow-lg">
+          <div className="lg:w-1/2 p-6 border border-violet-500 rounded-lg shadow-lg">
             <p className="text-lg mb-6">{currentService.description || 'The service you are looking for does not exist.'}</p>
 
             {/* Features Section */}
