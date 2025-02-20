@@ -65,7 +65,7 @@ export default function RootLayout({
           <Header />
           {children}
         </div>
-        <Script src="https://colt-analytics.vercel.app/api/tracker?token=fd9c28ee-1fda-4819-a3eb-314ca7f2bfaf" />
+        <Script src="https://colt-analytics.vercel.app/api/tracker?token=52fddf54-76ab-4b42-b303-7aa9465deb22" />
       </body>
     </html>
   );
