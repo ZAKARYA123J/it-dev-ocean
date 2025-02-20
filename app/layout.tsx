@@ -2,7 +2,7 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Header from "@/components/ui/header";
-
+import Script from "next/script";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -48,6 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      
       <head>
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -59,10 +60,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${nacelle.variable} bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
+        
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
         </div>
+        <Script src="https://colt-analytics.vercel.app/api/tracker?token=fd9c28ee-1fda-4819-a3eb-314ca7f2bfaf" />
       </body>
     </html>
   );
